@@ -1,0 +1,87 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/checkattendance"
+    android:background="#999"
+    tools:context="com.example.mrjava.attendanceapp.CheckAttendance">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:text="class: "
+                android:textColor="#000"
+                android:textSize="40dp"
+                android:gravity="center"/>
+            <EditText
+                android:gravity="center"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:textSize="22dp"
+                android:maxLength="11"
+                android:hint="class name "
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:text=""
+                android:id="@+id/ecname"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:textColor="#000"
+                android:text="ok"
+                android:id="@+id/ok"
+                android:textSize="40dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:id="@+id/share"
+                android:visibility="gone"
+                android:src="@drawable/share" />
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="15"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="5"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="rollno"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_weight="5"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="attendance"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_weight="5"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="total att"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/listsee">
+        </ListView>
+    </LinearLayout>
+</FrameLayout>

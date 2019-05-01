@@ -1,0 +1,100 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#999"
+    android:layout_height="match_parent"
+    tools:context="com.example.mrjava.attendanceapp.EnterEntry">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:background="#969696"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_width="wrap_content"
+                android:text="save"
+                android:id="@+id/stdsave"
+                android:textSize="30dp"/>
+            <Button
+                android:id="@+id/rst"
+                android:layout_weight="5"
+                android:text="reset"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Name: "
+                android:textSize="30dp" />
+            <EditText
+                android:inputType="textCapWords"
+                android:textSize="30dp"
+                android:id="@+id/edname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Roll No.: "
+                android:textSize="30dp" />
+            <EditText
+                android:inputType="number"
+                android:textSize="30dp"
+                android:maxLength="3"
+                android:id="@+id/rollno"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Mob No: "
+                android:textSize="30dp" />
+            <EditText
+                android:inputType="phone"
+                android:textSize="30dp"
+                android:maxLength="12"
+                android:id="@+id/mno"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Class : "
+                android:textSize="30dp" />
+            <TextView
+                android:gravity="center"
+                android:textSize="30dp"
+                android:maxLines="2"
+                android:id="@+id/addr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

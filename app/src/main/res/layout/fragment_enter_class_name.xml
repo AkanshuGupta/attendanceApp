@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/className"
+    android:layout_gravity="center"
+    android:background="#fffacd"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.mrjava.attendanceapp.EnterClassName">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_height="64dp"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:text="Enter class Name"
+        android:background="#ffbe00"/>
+    <EditText
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clsName"
+        android:maxLines="1"
+        android:maxLength="15"
+        android:hint="Enter new class name"
+        android:textSize="30dp"/>
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:textSize="20dp"
+            android:background="#ffffe0"
+            android:text="Cancel"
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_weight="5"
+            android:layout_height="match_parent" />
+        <Button
+            android:textSize="20dp"
+            android:background="#ffffe0"
+            android:text="Save"
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_weight="5"
+            android:layout_marginRight="1dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>
